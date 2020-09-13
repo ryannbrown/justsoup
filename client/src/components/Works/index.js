@@ -58,7 +58,8 @@ export default class Works extends Component {
           alignItems: `center`,
           position: `relative`,
           height: "398px",
-          width: "254px"
+          width: "254px",
+          marginTop: "50px"
         }}
       >
         <hr className="off-hr"></hr>
