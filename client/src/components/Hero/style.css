@@ -1,13 +1,12 @@
-.home-hero{
-    height:100vh;
-    width:100vw;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    
+.home-hero {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .home-hero img {
-    width:150px;
-    height:auto;
+  width: 110px;
+  height: auto;
 }
