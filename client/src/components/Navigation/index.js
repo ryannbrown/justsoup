@@ -3,8 +3,9 @@ import Navbar from "react-bootstrap/Navbar";
 import React, { Component } from "react";
 // import logo from './logo.svg';
 import "./style.css";
+
+
 import { Drawer } from "@material-ui/core";
-import whiteLogo from "../../media/white-logo.png";
 
 export default class Navigation extends Component {
   constructor(props) {
@@ -22,12 +23,8 @@ export default class Navigation extends Component {
   }
 
   componentDidMount() {
-    // if (window.innerWidth < 667) {
-    //   this.setState({
-    //     isMobile: true
-    //   })
-    //   console.log("not mobile")
-    // }
+   
+
 
     this.listener = document.addEventListener("scroll", (e) => {
       var scrolled = document.scrollingElement.scrollTop;

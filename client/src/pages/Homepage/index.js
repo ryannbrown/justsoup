@@ -2,14 +2,13 @@ import { Container, Nav, Button, Image, Row, Col } from "react-bootstrap";
 import Navbar from "react-bootstrap/Navbar";
 import React, { Component } from "react";
 import Navigation from "../../components/Navigation";
+import About from "../../components/About"
 // import logo from './logo.svg';
 // import HomeHero from "../../components/HomeHero/index"
 import "./style.css";
-import whiteLogo from "../../media/white-logo.png";
-import pinkLogo from "../../media/millie-logo-colored.png";
-import pinkArrow from '../../media/pinkarrow.png'
 import Hero from "../../components/Hero";
 import Works from "../../components/Works";
+import Cta from "../../components/Cta";
 
 export default class Homepage extends Component {
   constructor(props) {
@@ -41,17 +40,10 @@ export default class Homepage extends Component {
   render() {
     return (
       <div className="home-page">
-        <Navigation
-          color="white"
-          scrolledBgColor="white"
-          scrolledColor="rgb(255, 134, 134)"
-          logo={whiteLogo}
-          scrolledLogo={pinkLogo}
-          scrollDistance="120"
-          arrow={pinkArrow}
-        />
-        <Hero logo={whiteLogo} worksObject={this.props.worksObject}></Hero>
-        <Works worksObject={this.props.worksObject}></Works>
+        <Hero></Hero>
+        <About></About>
+        <Works></Works>
+        <Cta></Cta>
       </div>
     );
   }

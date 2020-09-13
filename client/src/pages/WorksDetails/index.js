@@ -17,10 +17,6 @@ import $ from "jquery";
 // import logo from "./logo.svg";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // const queryString = require('query-string');
-import Navigation from "../../components/Navigation";
-import logo from "../../media/millie-logo-colored.png";
-import whiteLogo from "../../media/white-logo.png";
-import pinkLogo from "../../media/millie-logo-colored.png";
 import whiteArrow from "../../media/whitearrow.png";
 require("dotenv").config();
 
@@ -81,15 +77,15 @@ export default class WorksDetails extends Component {
 
     return (
       <div>
-        <Navigation
+        {/* <Navigation
           color="#FF8686"
           scrolledBgColor="#FF8686"
           scrolledColor="white"
           scrolledLogo={whiteLogo}
-          logo={pinkLogo}
+          // logo={pinkLogo}
           scrollDistance="1"
           arrow={whiteArrow}
-        />
+        /> */}
 
         <div className="works-page">
           {thisModal ? (

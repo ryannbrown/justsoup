@@ -14,8 +14,52 @@
   scroll-behavior: smooth;
 }
 
+.soup-btn{
+  display: inline-block;
+  font-weight: 400;
+  color: #171717;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  background-color: transparent;
+  border: 1px solid #171717;
+  margin-bottom: 10px;
+}
+.soup-btn:hover{
+  display: inline-block;
+  font-weight: 400;
+  color: #171717;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  color: white;
+  background-color: #E23030;
+  border: 1px solid #171717;
+  margin-bottom: 10px;
+}
 
 
+.dots {
+  width:21.5px;
+  position:absolute;
+  top:-29px;
+}
 
 /* 
 .Row {

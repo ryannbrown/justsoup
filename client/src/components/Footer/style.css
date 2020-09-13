@@ -1,31 +1,13 @@
-.footer-div {
-    /* position:absolute;
-    top:25%; */
+.footer-component{
+    position:relative;
+    background-color:#E23030;
+    height:35vh;
+    display:flex;
+    align-items:center;
+    justify-content: center;
 }
 
-.footer-content-box{
-    width:100%;
-    position:absolute;
-    top:40%;
-    color:white;
+.footer-content img {
+    width:98px;
 }
 
-.footer-content-box a {
-    color:white;
-}
-
-
-.comet-image{
-    width:5%;
-    margin-top: -1%;
-}
-
-@media (max-width:667px) {
-    .comet-image {
-        width: 25%;
-        margin-top: -7.5%;
-    }
-    .footer-content-box{
-        width:95%;
-    }
-}

@@ -4,7 +4,8 @@ import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBolt } from "@fortawesome/free-solid-svg-icons";
 import "./style.css";
-
+import logo from "../../media/redlogo.png"
+import dots from "../../media/dots.png"
 export default class Footer extends Component {
   constructor(props) {
     super(props);
@@ -23,35 +24,13 @@ export default class Footer extends Component {
 
   render() {
     return (
-      <Row>
-        <Col
-          style={{
-            // backgroundImage: `url(${starBackground})`,
-            backgroundColor: ` #FF8686`,
-            opacity: `90%`,
-            backgroundBlendMode: `multiply`,
-            backgroundPosition: `center`,
-            backgroundSize: `cover`,
-            backgroundRepeat: `no-repeat`,
-            // backgroundAttachment: `fixed`,
-            // height: `100vh`,
-            display: `flex`,
-            alignItems: `center`,
-            position: `relative`,
-            width: `350px`,
-            height: `200px`
-            //   cover no-repeat center center fixed`
-          }}
-          className="footer-div"
-        >
-          <div className="footer-content-box">
-              <a href="mailto:ryanbrownmedia@gmail.com,timsteeleallenl@gmail.com?subject=Websites">
-            <p>Powered by Just Soup</p>
-            </a>
-            <FontAwesomeIcon icon={faBolt} />
-          </div>
-        </Col>
-      </Row>
+   <div className="footer-component">
+     <img className="dots" src={dots}></img>
+        <div className="footer-content">
+          <img src={logo}></img>
+        </div>
+        
+      </div>
     );
   }
 }

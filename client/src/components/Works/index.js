@@ -1,72 +1,77 @@
-
 import React, { Component } from "react";
-import Carousel from 'react-bootstrap/Carousel'
-import { Card, ListGroup, ListGroupItem, Button, Image, CardDeck, Spinner } from 'react-bootstrap';
+import Carousel from "react-bootstrap/Carousel";
+import {
+  Card,
+  ListGroup,
+  ListGroupItem,
+  Button,
+  Image,
+  CardDeck,
+  Spinner,
+} from "react-bootstrap";
 // import App from "../../App"
-import './style.css';
+import "./style.css";
 // import doodle from "../../media/doodle.png"
+import bhLogo from "../../media/bhlogo.png";
+import ihLogo from "../../media/ihlogo.png";
+import moonsLogo from "../../media/moonslogo.png";
+import millieLogo from "../../media/millielogo.png";
 
 export default class Works extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            // worksObject: []
-        };
-    }
+  constructor(props) {
+    super(props);
+    this.state = {
+      logoState: [],
+    };
+  }
 
-    navTo = (item) => {
-     window.location.href =`/works/${item}`
-    }
+  navTo = (item) => {
+    window.location.href = `/works/${item}`;
+  };
 
+  componentDidMount() {
+    const logoList = [
+      { logo: moonsLogo },
+      { logo: bhLogo },
+      { logo: millieLogo },
+      { logo: ihLogo },
+    ];
 
-    componentDidMount() {
+    this.setState({
+      logoState: logoList,
+    });
+  }
 
-       
-console.log(this.props.worksObject)
-        // this.setState({
-        //     worksObject: worksObject
-        // })
-    }
+  render() {
+    const logos = this.state.logoState.map((item, i) => (
+      <div
+        className="off"
+        style={{
+          backgroundImage: `url(${item.logo})`,
+          backgroundColor: "black",
+          // backgroundBlendMode: `multiply`,
+          opacity: "30%",
+          backgroundPosition: `center`,
+          backgroundSize: `contain`,
+          backgroundRepeat: `no-repeat`,
+          display: `flex`,
+          alignItems: `center`,
+          position: `relative`,
+          height: "398px",
+          width: "254px",
+        }}>
+        <hr className="off-hr"></hr>
+      </div>
+    ));
 
-
-
-    render() {
-
-        const worksCards = this.props.worksObject.map((item, i) =>
-            <div onClick={()=>{this.navTo(i)}} className="off" style={{
-                backgroundImage: `url(https://millie-site.s3.amazonaws.com/${item.image})`,
-                backgroundBlendMode: `multiply`,
-                backgroundPosition: `center`,
-                backgroundSize: `cover`,
-                backgroundRepeat: `no-repeat`,
-                display: `flex`,
-                alignItems: `center`,
-                position: `relative`,
-            }}>
-                    <div className="off-description">
-                        <p className="off-title">{item.title}</p>
-                    </div>
-
-            </div>
-        )
-
-
-        return (
-            <div className="works-page">
-              
-                <div className="parent mt-5">
-                    <div className="off-box-parent">
-                        <div className="off-box-container">
-                            {worksCards}
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        )
-    }
+    return (
+      <div className="works-component">
+        <div className="off-box-parent">
+          <h1>our work</h1>
+          {logos}
+          <p>See more</p>
+        </div>
+      </div>
+    );
+  }
 }
-
-
-
-

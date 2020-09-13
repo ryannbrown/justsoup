@@ -5,11 +5,9 @@ import Navigation from "../../components/Navigation";
 // import logo from './logo.svg';
 // import HomeHero from "../../components/HomeHero/index"
 import "./style.css";
-import whiteLogo from "../../media/white-logo.png";
-import pinkLogo from "../../media/millie-logo-colored.png";
 import whiteArrow from '../../media/whitearrow.png'
-import mill from "../../media/mill-desktop.png";
 import { Hidden } from "@material-ui/core";
+
 
 export default class About extends Component {
   constructor(props) {
@@ -25,27 +23,29 @@ export default class About extends Component {
 
   fetchPosts() {}
 
-  componentDidMount() {}
+  componentDidMount() {
+
+  }
 
   render() {
     return (
       <div className="about-page">
-        <Navigation
+        {/* <Navigation
           color="#FF8686"
           scrolledBgColor="#FF8686"
           scrolledColor="white"
-          scrolledLogo={whiteLogo}
-          logo={pinkLogo}
+    
+          // logo={pinkLogo}
           scrollDistance="120"
           arrow={whiteArrow}
-        />
+        /> */}
         <div className="about-content">
           <div className="white-block">
             <div className="img-container">
               <div
                 className="about-img"
                 style={{
-                  backgroundImage: `url(${mill})`,
+                  // backgroundImage: `url(${mill})`,
                   // backgroundColor: `#FF8686`,
                   // opacity: `90%`,
                   // backgroundBlendMode: `lighten`,
@@ -69,7 +69,7 @@ export default class About extends Component {
                 }}
               >
                 {/* <Image className="about-img" width="400px" src={mill}></Image> */}
-                <Image className="about-logo" src={pinkLogo}></Image>
+                {/* <Image className="about-logo" src={pinkLogo}></Image> */}
               </div>
             </div>
           </div>
