@@ -21,11 +21,14 @@
   padding: 50px;
 }
 
-@media (max-width: 667px) {
+@media (max-width: 768px) {
   .about-content {
     flex-direction: column;
     max-width: 1098px;
     align-items: center;
     justify-content: center;
+  }
+  .about-content div {
+    width: auto;
   }
 }
