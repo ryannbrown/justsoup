@@ -5,9 +5,8 @@ import Navigation from "../../components/Navigation";
 // import logo from './logo.svg';
 // import HomeHero from "../../components/HomeHero/index"
 import "./style.css";
-import whiteArrow from '../../media/whitearrow.png'
+import whiteArrow from "../../media/whitearrow.png";
 import { Hidden } from "@material-ui/core";
-
 
 export default class About extends Component {
   constructor(props) {
@@ -17,15 +16,13 @@ export default class About extends Component {
     this.state = {
       status: "top",
       showModal: false,
-      forms: [],
+      forms: []
     };
   }
 
   fetchPosts() {}
 
-  componentDidMount() {
-
-  }
+  componentDidMount() {}
 
   render() {
     return (
@@ -60,7 +57,7 @@ export default class About extends Component {
                   marginBottom: `-25%`,
                   position: "absolute",
                   top: "35%",
-                  marginLeft:'10px'
+                  marginLeft: "10px"
                   // background: `linear-gradient(to top, transparent 10%, #ffffff )`
                   // display: `flex`,
                   // alignItems: `center`,
@@ -75,7 +72,7 @@ export default class About extends Component {
           </div>
           <div className="pink-block">
             <div className="narrow">
-            {/* <div className="about-greeting">
+              {/* <div className="about-greeting">
               <h1>Hi There!</h1>
               <p>
                 Welcome to my blog of creative work. My name is Millicent, but I
@@ -88,8 +85,8 @@ export default class About extends Component {
                 you a more intimate look at my creations. Sincerely, Millie
               </p>
             </div> */}
-          </div>
-           <div className="about">
+            </div>
+            <div className="about">
               <h1>Hi There!</h1>
               <p>
                 Welcome to my blog of creative work. My name is Millicent, but I

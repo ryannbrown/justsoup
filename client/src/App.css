@@ -1,20 +1,18 @@
-
 /* * {
   overflow-x:hidden;
 } */
 
-
 @font-face {
-  font-family:'Palm Canyon Drive';
-  src: local('Palm-Canyon-Drive'), url(./fonts/palmcanyon.woff)format('woff');
+  font-family: "Palm Canyon Drive";
+  src: local("Palm-Canyon-Drive"), url(./fonts/palmcanyon.woff) format("woff");
 }
 
 * {
-  font-family: 'canada-type-gibson', sans-serif;
+  font-family: "canada-type-gibson", sans-serif;
   scroll-behavior: smooth;
 }
 
-.soup-btn{
+.soup-btn {
   display: inline-block;
   font-weight: 400;
   color: #171717;
@@ -24,16 +22,17 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  padding: .375rem .75rem;
+  padding: 10px 35px !important;
   font-size: 1rem;
   line-height: 1.5;
-  border-radius: .25rem;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   background-color: transparent;
   border: 1px solid #171717;
   margin-bottom: 10px;
 }
-.soup-btn:hover{
+.soup-btn:hover {
   display: inline-block;
   font-weight: 400;
   color: #171717;
@@ -43,22 +42,22 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  padding: .375rem .75rem;
+  padding: 10px 35px !important;
   font-size: 1rem;
   line-height: 1.5;
-  border-radius: .25rem;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   color: white;
-  background-color: #E23030;
-  border: 1px solid #171717;
+  background-color: #e23030;
+  border: none;
   margin-bottom: 10px;
 }
 
-
 .dots {
-  width:21.5px;
-  position:absolute;
-  top:-29px;
+  width: 21.5px;
+  position: absolute;
+  top: -29px;
 }
 
 /* 
@@ -68,40 +67,44 @@
 } */
 
 .row {
-  padding-left:0;
-  padding-right:0
+  padding-left: 0;
+  padding-right: 0;
 }
 .grid {
-  padding-left:0;
-  padding-right:0
+  padding-left: 0;
+  padding-right: 0;
 }
 .col-md-12 {
-  padding-left:0px !important;
-  padding-right:0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 }
-
 
 .App {
   text-align: center;
   overflow-x: hidden !important;
 }
 
-h1, h2 {
-font-weight:400;
-font-family: 'Palm Canyon Drive', sans-serif;
+h1,
+h2 {
+  font-weight: 400;
+  font-family: "Palm Canyon Drive", sans-serif;
 }
 
 h1 {
-  margin:0;
+  margin: 0;
 }
 
-p, li, h3, h4, h5, a, button {
-font-weight:200;
-  letter-spacing:.1rem;
-  font-family: 'canada-type-gibson', sans-serif;
+p,
+li,
+h3,
+h4,
+h5,
+a,
+button {
+  font-weight: 200;
+  letter-spacing: 0.1rem;
+  font-family: "canada-type-gibson", sans-serif;
 }
-
-
 
 /* .App {
   background-image:url(../src/media/moroccan-flower.png);
@@ -148,13 +151,12 @@ font-weight:200;
   /* margin-top:5%; */
 }
 
-
 .primaryTextColor {
-  color: #0E3B62;
+  color: #0e3b62;
 }
 
-.lightText  {
-  color:  #ECECEC
+.lightText {
+  color: #ececec;
 }
 
 .darkText {
@@ -176,20 +178,19 @@ hr {
     border: 0;
     border-top: 1px solid #eee;
     border-bottom: 1px solid #fff;
-}
+  }
 }
 
 .addPadding {
-  padding:5%;
+  padding: 5%;
 }
 
-
-.footer-div{
-  height:200px;
-  background-color:lightblue;
+.footer-div {
+  height: 200px;
+  background-color: lightblue;
 }
 
 .footer-div > * {
-  position:absolute;
-  top:50%;
+  position: absolute;
+  top: 50%;
 }

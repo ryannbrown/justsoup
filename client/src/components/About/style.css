@@ -1,22 +1,31 @@
 .about-component {
-    position:relative;
-    height:100vh;
-    width:100vw;
-    background-color:#E23030;
-    display:flex;
-    align-items:center;
-    justify-content: center;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #e23030;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-content {
-    display:flex;
-    flex-direction:row;
-    max-width:1098px;
+  display: flex;
+  flex-direction: row;
+  max-width: 1098px;
 }
 
-.about-content div{
-    color:white;
-    width:50%;
-    text-align:left;
-    padding:50px;
+.about-content div {
+  color: white;
+  width: 50%;
+  text-align: left;
+  padding: 50px;
+}
+
+@media (max-width: 667px) {
+  .about-content {
+    flex-direction: column;
+    max-width: 1098px;
+    align-items: center;
+    justify-content: center;
+  }
 }
