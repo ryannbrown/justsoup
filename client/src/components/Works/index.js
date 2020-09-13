@@ -7,7 +7,7 @@ import {
   Button,
   Image,
   CardDeck,
-  Spinner,
+  Spinner
 } from "react-bootstrap";
 // import App from "../../App"
 import "./style.css";
@@ -21,11 +21,11 @@ export default class Works extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      logoState: [],
+      logoState: []
     };
   }
 
-  navTo = (item) => {
+  navTo = item => {
     window.location.href = `/works/${item}`;
   };
 
@@ -34,11 +34,11 @@ export default class Works extends Component {
       { logo: moonsLogo },
       { logo: bhLogo },
       { logo: millieLogo },
-      { logo: ihLogo },
+      { logo: ihLogo }
     ];
 
     this.setState({
-      logoState: logoList,
+      logoState: logoList
     });
   }
 
@@ -52,14 +52,15 @@ export default class Works extends Component {
           // backgroundBlendMode: `multiply`,
           opacity: "30%",
           backgroundPosition: `center`,
-          backgroundSize: `contain`,
+          backgroundSize: `120px;`,
           backgroundRepeat: `no-repeat`,
           display: `flex`,
           alignItems: `center`,
           position: `relative`,
           height: "398px",
-          width: "254px",
-        }}>
+          width: "254px"
+        }}
+      >
         <hr className="off-hr"></hr>
       </div>
     ));
