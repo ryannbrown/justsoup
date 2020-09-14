@@ -1,16 +1,22 @@
-.cta-component{
-    height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+.cta-component {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cta-content {
-    max-width:600px;
+  max-width: 600px;
 }
 
 .cta-content > h1 {
-    font-size:4rem;
-    color:#E23030;
-    margin:15px;
+  font-size: 4rem;
+  color: #e23030;
+  margin: 15px;
+}
+
+@media (max-width: 768px) {
+  .cta-content {
+    padding: 50px;
+  }
 }

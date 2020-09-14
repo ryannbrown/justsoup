@@ -26,21 +26,12 @@ export default class Works extends Component {
     };
   }
 
-
   componentDidMount() {
-
-
-
     const logoList = [
-      { logo: ihLogo,
-        link:'https://www.idlehourcoffee.com/' },
-      { logo: moonsLogo,
-      link:'' },
-      { logo: bhLogo,
-      link:'http://blueheronculinary.com/' },
-      { logo: millieLogo,
-      link:'https://www.mgillustrated.com/' }
-    
+      { logo: ihLogo, link: "https://www.idlehourcoffee.com/" },
+      { logo: moonsLogo, link: "" },
+      { logo: bhLogo, link: "http://blueheronculinary.com/" },
+      { logo: millieLogo, link: "https://www.mgillustrated.com/" }
     ];
 
     this.setState({
@@ -50,7 +41,6 @@ export default class Works extends Component {
 
   render() {
     const logos = this.state.logoState.map((item, i) => (
-     
       <div
         className="off"
         style={{
@@ -69,10 +59,10 @@ export default class Works extends Component {
           marginTop: "50px"
         }}
       >
-         <a className="work-link" target="_blank" href={item.link}>
-        <div className="opacity-filter"></div>
-        <hr className="off-hr"></hr>
-      </a>
+        <a className="work-link" target="_blank" href={item.link}>
+          <div className="opacity-filter"></div>
+          <hr className="off-hr"></hr>
+        </a>
       </div>
     ));
 
