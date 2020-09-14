@@ -29,7 +29,7 @@ export default class Homepage extends Component {
 
   componentDidMount() {
     let height = window.innerHeight + "px";
-    console.log(height);
+    // console.log(height);
 
     if (window.innerWidth < 667) {
       this.setState({
@@ -38,12 +38,35 @@ export default class Homepage extends Component {
     }
     window.addEventListener("resize", () => {
       let height = window.innerHeight + "px";
-      console.log(height);
       this.setState({
         height: height,
       });
     });
   }
+
+  componentDidUpdate() {
+  //   window.addEventListener("resize", () => {
+  //     if (window.innerWidth < 667) {
+  //       console.log("isMobile")
+  //       this.setState({
+  //         isMobile: true
+  //       });
+  //     }
+  // });
+
+  // if (this.state.isMobile) {
+  //   window.addEventListener("resize", () => {
+  //     if (window.innerWidth > 667) {
+  //       console.log("isMobile")
+  //       this.setState({
+  //         isMobile: false
+  //       });
+  //     }
+  // });
+  // }
+
+}
+
   showBrand = () => {
     this.setState({ showBrand: true });
   };
