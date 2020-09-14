@@ -4,6 +4,7 @@ import React, { Component } from "react";
 // import logo from './logo.svg';
 // import HomeHero from "../../components/HomeHero/index"
 import "./style.css";
+import leftArrow from "../../media/left-arrow.png"
 import bhLogo from "../../media/bhlogo.png";
 import ihLogo from "../../media/ihlogo.png";
 import moonsLogo from "../../media/moonslogo.png";
@@ -24,10 +25,14 @@ export default class Brand extends Component {
 
   componentDidMount() {
     const logoList = [
-      { logo: moonsLogo },
-      { logo: bhLogo },
-      { logo: millieLogo },
-      { logo: ihLogo },
+      { logo: ihLogo,
+        link:'https://www.idlehourcoffee.com/' },
+      { logo: moonsLogo,
+      link:'' },
+      { logo: bhLogo,
+      link:'http://blueheronculinary.com/' },
+      { logo: millieLogo,
+      link:'https://www.mgillustrated.com/' }
     ];
 
     this.setState({
@@ -43,26 +48,43 @@ export default class Brand extends Component {
           backgroundImage: `url(${item.logo})`,
           backgroundColor: "black",
           // backgroundBlendMode: `multiply`,
-          opacity: "30%",
+          // opacity: "30%",
           backgroundPosition: `center`,
-          backgroundSize: `contain`,
+          backgroundSize: `120px`,
           backgroundRepeat: `no-repeat`,
           display: `flex`,
           alignItems: `center`,
           position: `relative`,
           height: "398px",
           width: "254px",
+          marginTop: "50px"
         }}>
+           <a className="work-link" target="_blank" href={item.link}>
+          <div className="opacity-filter"></div>
         <hr className="off-hr"></hr>
+        </a>
       </div>
     ));
 
     return (
-      <div className="brand-page">
-        <div className="off-box-parent">
+      <div style={{
+        backgroundColor: `rgb(23,23,23)`,
+        zIndex: "2000",
+        // position: `fixed`,
+        width: `100%`
+        // height: `100vh`,
+      }} className="brand-page">
+        <div className="brand-container">
+         <img
+            onClick={this.props.hideBrand}
+            className="left-arrow"
+            src={leftArrow}
+          ></img>
           <h1>our work</h1>
+          <div className="brand-icon-box">
           {logos}
-          <p onClick={this.props.showBrand}>See more</p>
+            
+          </div>
         </div>
       </div>
     );

@@ -6,6 +6,7 @@ import About from "../../components/About"
 // import logo from './logo.svg';
 // import HomeHero from "../../components/HomeHero/index"
 import "./style.css";
+import Footer from "../../components/Footer/index.js"
 import Hero from "../../components/Hero";
 import Brand from "../../components/Brand";
 import Works from "../../components/Works";
@@ -39,12 +40,15 @@ hideBrand = () => {
     const {showBrand} = this.state;
     return (
       <div className="home-page">
-        {showBrand && 
-        <Brand></Brand>}
+        {showBrand ? 
+        <Brand hideBrand={this.hideBrand}></Brand> : <div>
         <Hero></Hero>
         <About></About>
         <Works showBrand={this.showBrand}></Works>
         <Cta></Cta>
+        <Footer></Footer>
+        </div>
+        }
       </div>
     );
   }

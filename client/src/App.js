@@ -16,7 +16,7 @@ import WorksDetails from "./pages/WorksDetails/index"
 import Admin from "./pages/Admin/index.js"
 import About from "./pages/About/index.js"
 // import BlogPost from "./pages/BlogPost/index.js"
-import Footer from "./components/Footer/index.js"
+
 // import Portfolio from "./components/Portfolio/index"
 // import Pricing from "./components/Pricing/index"
 // import About from "./components/About/index"
@@ -71,7 +71,7 @@ this.fetchPosts();
           <Route exact path="/" render={(props) => <Homepage {...props} worksObject={worksObject} title={`Props through render`} />} />
         </Switch>
       </Router>
-      <Footer></Footer>
+      
 
     </div>
   );
