@@ -48,3 +48,18 @@ margin-top:25px
   color:white;
   background-image:'url(https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)'
 }
+
+
+.slick-dots li.slick-active button:before {
+  opacity: 1 !important;
+  color: white !important;
+}
+
+.slick-dots li button:before {
+ color:white !important;
+ opacity:.5 !important;
+}
+
+.slick-arrow {
+  display: none !important;
+}
