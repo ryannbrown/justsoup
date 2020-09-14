@@ -38,7 +38,7 @@ export default class Works extends Component {
       { logo: bhLogo,
       link:'http://blueheronculinary.com/' },
       { logo: millieLogo,
-      link:'https://www.mgillustrated.com/' },
+      link:'https://www.mgillustrated.com/' }
     
     ];
 
