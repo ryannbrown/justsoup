@@ -14,7 +14,7 @@ export default class Navigation extends Component {
     this.listener = null;
     this.state = {
       status: "top",
-      isMobile: false,
+
     };
   }
 
@@ -45,7 +45,7 @@ export default class Navigation extends Component {
   }
 
   render() {
-    const { isMobile } = this.state;
+  
 
     return (
       <div>

@@ -10,6 +10,7 @@ import Footer from "../../components/Footer/index.js"
 import Hero from "../../components/Hero";
 import Brand from "../../components/Brand";
 import Works from "../../components/Works";
+import MobileWorks from "../../components/MobileWorks";
 import Cta from "../../components/Cta";
 
 export default class Homepage extends Component {
@@ -20,12 +21,18 @@ export default class Homepage extends Component {
     this.state = {
       status: "top",
       forms: [],   
-       showBrand: false
+       showBrand: false,
+       isMobile:false
     };
   }
 
   componentDidMount() {
-    // this.fetchPosts();
+  
+    if (window.innerWidth < 667) {
+      this.setState({
+        isMobile: true
+      })
+    }
   }
 
 showBrand = () => {
@@ -37,14 +44,15 @@ hideBrand = () => {
 
 
   render() {
-    const {showBrand} = this.state;
+    const {showBrand, isMobile} = this.state;
     return (
       <div className="home-page">
         {showBrand ? 
         <Brand hideBrand={this.hideBrand}></Brand> : <div>
         <Hero></Hero>
         <About></About>
-        <Works showBrand={this.showBrand}></Works>
+        {isMobile? <MobileWorks showBrand={this.showBrand}></MobileWorks>
+        :<Works showBrand={this.showBrand}></Works> }
         <Cta></Cta>
         <Footer></Footer>
         </div>
