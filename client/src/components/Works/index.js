@@ -50,9 +50,9 @@ export default class Works extends Component {
           backgroundImage: `url(${item.logo})`,
           backgroundColor: "black",
           // backgroundBlendMode: `multiply`,
-          opacity: "30%",
+          // opacity: "30%",
           backgroundPosition: `center`,
-          backgroundSize: `120px;`,
+          backgroundSize: `120px`,
           backgroundRepeat: `no-repeat`,
           display: `flex`,
           alignItems: `center`,
@@ -62,6 +62,7 @@ export default class Works extends Component {
           marginTop: "50px"
         }}
       >
+        <div className="opacity-filter"></div>
         <hr className="off-hr"></hr>
       </div>
     ));
