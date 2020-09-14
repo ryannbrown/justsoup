@@ -4,7 +4,7 @@ import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBolt } from "@fortawesome/free-solid-svg-icons";
 import "./style.css";
-import logo from "../../media/redlogo.png"
+import logo from "../../media/blackwhitelogo.png"
 import dots from "../../media/dots.png"
 export default class Footer extends Component {
   constructor(props) {
