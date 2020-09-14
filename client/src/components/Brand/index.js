@@ -1,44 +1,37 @@
+import { Container, Nav, Button, Image, Row, Col } from "react-bootstrap";
+import Navbar from "react-bootstrap/Navbar";
 import React, { Component } from "react";
-import Carousel from "react-bootstrap/Carousel";
-import {
-  Card,
-  ListGroup,
-  ListGroupItem,
-  Button,
-  Image,
-  CardDeck,
-  Spinner
-} from "react-bootstrap";
-// import App from "../../App"
+// import logo from './logo.svg';
+// import HomeHero from "../../components/HomeHero/index"
 import "./style.css";
-// import doodle from "../../media/doodle.png"
 import bhLogo from "../../media/bhlogo.png";
 import ihLogo from "../../media/ihlogo.png";
 import moonsLogo from "../../media/moonslogo.png";
 import millieLogo from "../../media/millielogo.png";
 
-export default class Works extends Component {
+
+export default class Brand extends Component {
   constructor(props) {
     super(props);
+
+    this.listener = null;
     this.state = {
+      status: "top",
+      icons: [],
       logoState: []
     };
   }
-
-  navTo = item => {
-    window.location.href = `/works/${item}`;
-  };
 
   componentDidMount() {
     const logoList = [
       { logo: moonsLogo },
       { logo: bhLogo },
       { logo: millieLogo },
-      { logo: ihLogo }
+      { logo: ihLogo },
     ];
 
     this.setState({
-      logoState: logoList
+      logoState: logoList,
     });
   }
 
@@ -52,22 +45,20 @@ export default class Works extends Component {
           // backgroundBlendMode: `multiply`,
           opacity: "30%",
           backgroundPosition: `center`,
-          backgroundSize: `120px;`,
+          backgroundSize: `contain`,
           backgroundRepeat: `no-repeat`,
           display: `flex`,
           alignItems: `center`,
           position: `relative`,
           height: "398px",
           width: "254px",
-          marginTop: "50px"
-        }}
-      >
+        }}>
         <hr className="off-hr"></hr>
       </div>
     ));
 
     return (
-      <div className="works-component">
+      <div className="brand-page">
         <div className="off-box-parent">
           <h1>our work</h1>
           {logos}

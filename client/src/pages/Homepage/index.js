@@ -7,6 +7,7 @@ import About from "../../components/About"
 // import HomeHero from "../../components/HomeHero/index"
 import "./style.css";
 import Hero from "../../components/Hero";
+import Brand from "../../components/Brand";
 import Works from "../../components/Works";
 import Cta from "../../components/Cta";
 
@@ -17,32 +18,32 @@ export default class Homepage extends Component {
     this.listener = null;
     this.state = {
       status: "top",
-      showModal: false,
-      forms: [],
+      forms: [],   
+       showBrand: false
     };
   }
 
-  fetchPosts() {
-    fetch("/api/posts")
-      .then((res) => res.json())
-      .then((json) => {
-        console.log("json", json.data);
-        this.setState({
-          posts: json.data,
-        });
-      });
+  componentDidMount() {
+    // this.fetchPosts();
   }
 
-  componentDidMount() {
-    this.fetchPosts();
-  }
+showBrand = () => {
+    this.setState({showBrand: true})
+}
+hideBrand = () => {
+    this.setState({showBrand: false})
+}
+
 
   render() {
+    const {showBrand} = this.state;
     return (
       <div className="home-page">
+        {showBrand && 
+        <Brand></Brand>}
         <Hero></Hero>
         <About></About>
-        <Works></Works>
+        <Works showBrand={this.showBrand}></Works>
         <Cta></Cta>
       </div>
     );
