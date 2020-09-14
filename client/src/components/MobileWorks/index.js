@@ -64,6 +64,7 @@ export default class MobileWorks extends Component {
     const logos = this.state.logoState.map((item, i) => (
      <div style={{
       backgroundSize: `120px`,
+      backgroundColor:'white',
       backgroundRepeat: `no-repeat`,
       display: `flex`,
       alignItems: `center`,
@@ -74,7 +75,7 @@ export default class MobileWorks extends Component {
      }}>
       <img className="mobile-works-img" src={item.logo}></img>
          <a className="work-link" target="_blank" href={item.link}>
-         <hr className="off-hr"></hr>
+         {/* <hr className="off-hr"></hr> */}
         {/* <div className="opacity-filter"></div> */}
         {/* <hr className="off-hr"></hr> */}
       </a>
@@ -87,8 +88,8 @@ export default class MobileWorks extends Component {
           <h1>our work</h1>
           <Slider {...settings}>
          {logos}
-      
           </Slider>
+            <hr className="off-hr"></hr>
           <p onClick={this.props.showBrand}>See more</p>
         </div>
       </div>
