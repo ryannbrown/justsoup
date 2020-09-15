@@ -71,7 +71,8 @@ export default class Brand extends Component {
         backgroundColor: `rgb(23,23,23)`,
         zIndex: "2000",
         // position: `fixed`,
-        width: `100%`
+        width: `100%`,
+        paddingBottom:`100px`
         // height: `100vh`,
       }} className="brand-page">
         <div className="brand-container">
