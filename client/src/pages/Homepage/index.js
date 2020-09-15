@@ -12,6 +12,7 @@ import Brand from "../../components/Brand";
 import Works from "../../components/Works";
 import MobileWorks from "../../components/MobileWorks";
 import Cta from "../../components/Cta";
+var _ = require("lodash");
 
 export default class Homepage extends Component {
   constructor(props) {
@@ -20,7 +21,7 @@ export default class Homepage extends Component {
     this.listener = null;
     this.state = {
       status: "top",
-      height:'100vh',
+      height: "100vh",
       forms: [],
       showBrand: false,
       isMobile: false,
@@ -45,28 +46,21 @@ export default class Homepage extends Component {
   }
 
   componentDidUpdate() {
-  //   window.addEventListener("resize", () => {
-  //     if (window.innerWidth < 667) {
-  //       console.log("isMobile")
-  //       this.setState({
-  //         isMobile: true
-  //       });
-  //     }
-  // });
-
-  // if (this.state.isMobile) {
-  //   window.addEventListener("resize", () => {
-  //     if (window.innerWidth > 667) {
-  //       console.log("isMobile")
-  //       this.setState({
-  //         isMobile: false
-  //       });
-  //     }
-  // });
-  // }
-
-}
-
+    window.addEventListener(
+      "resize",
+      _.debounce(() => {
+        if (window.innerWidth < 667) {
+          this.setState({
+            isMobile: true,
+          });
+        } else if (window.innerWidth > 667) {
+          this.setState({
+            isMobile: false,
+          });
+        }
+      },400)
+    );
+  }
   showBrand = () => {
     this.setState({ showBrand: true });
   };
