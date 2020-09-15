@@ -31,7 +31,9 @@ export default class Cta extends Component {
       <div className="cta-component">
         <div className="cta-content">
           <h1>work with us</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Unbound by CMS's or set structures, we guarantee a completely personal experience and touch to your brand and website. We code our 
+            websites from scratch with love. Tim mocks up your design, giving your brand that much needed spark. Ryan takes the dream and gives it flight by using the most modern and powerful web technologies (React, Javascript, AWS, Postgresql). If you have a brand that needs shaken up, or a new concept that you want to give wheels to, reach out to us, we'd love to take you there. 
+          </p>
           <a href="mailto:team@justsoup.io?subject=Websites">
           <button className="soup-btn">Contact us</button>
           </a>

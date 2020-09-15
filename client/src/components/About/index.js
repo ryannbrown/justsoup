@@ -38,7 +38,7 @@ export default class About extends Component {
                 <p>We are</p>
                 <img src={wordmarkWhite}></img>
             </div>
-            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            <div>Two creative spirits who love to make things, and make them look good. We have Tim, who has a timeless love for all things Vietnam, coffee, and and mid-century designs. And we have Ryan, who is the ultimate enthusiast, has traveled all over and is always looking for more, is passionate about people and seeing their dreams be fully realized. A former colleague of Ryan and Tim's would always say that Pho was just soup. The irony of Pho being 'just soup' started the bond, because to Ryan and Tim that couldn't be more ridiculous. Now Ryan and Tim are looking at brands as more than just brands... craving to change the landscape and make businesses more than they ever dreamed.</div>
           </div>
          
         </div>
