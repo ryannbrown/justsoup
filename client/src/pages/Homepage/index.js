@@ -32,6 +32,10 @@ export default class Homepage extends Component {
     let height = window.innerHeight + "px";
     // console.log(height);
 
+    this.setState({
+      height: height
+  })
+
     if (window.innerWidth < 667) {
       this.setState({
         isMobile: true,
