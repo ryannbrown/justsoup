@@ -20,11 +20,13 @@ left:30%;
   justify-content:center;
 }
 
-.works-component > h1 {
+.works-component h1 {
   font-size: 4rem;
   color: white;
   position: absolute;
   top: 15%;
+  left:50%;
+  margin-left:-77.125px;
 }
 /* .off-box-parent > p {
   font-size: 1rem;
@@ -36,10 +38,16 @@ left:30%;
 
 .works-component p  {
   position: absolute;
-  bottom: 0;
+  bottom: 5%;
   color: white;
   left: 50%;
   margin-left: -37.5px;
+  cursor:pointer;
+}
+
+.works-component p:hover {
+  color: #e23030;
+  transition: .6s;
 }
 
 .off-textbox {
@@ -51,7 +59,7 @@ left:30%;
   width: 50%;
 }
 
-.off-box-parent {
+.logo-box {
   justify-content: center;
   position: relative;
   width: 100%;
@@ -105,4 +113,18 @@ margin-left: -32px; */
   border-color: #e23030;
   box-shadow: 0px 0px 20px 1px #e23030;
   transition: 0.6s;
+}
+
+
+@media (max-width:667px) {
+  .w-container p {
+    margin-top:50px;
+  }
+}
+
+@media (min-width:667px) AND (max-height:650px) {
+  .works-component {
+    height: 750px !important;
+ 
+  }
 }
