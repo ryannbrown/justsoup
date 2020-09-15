@@ -12,24 +12,34 @@ left:30%;
 .works-component {
   background-color: #171717;
   height: 100vh;
+  max-height:100%;
   width: 100vw;
-  /* display:flex; */
-  /* align-content:center;
-  justify-content:center; */
+  position:relative;
+   display:flex; 
+   align-content:center;
+  justify-content:center;
 }
 
-.off-box-parent > h1 {
+.works-component > h1 {
   font-size: 4rem;
   color: white;
   position: absolute;
   top: 15%;
 }
-.off-box-parent > p {
+/* .off-box-parent > p {
   font-size: 1rem;
   color: white;
   opacity: 0.3;
   position: absolute;
   bottom: 15%;
+} */
+
+.works-component p  {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  left: 50%;
+  margin-left: -37.5px;
 }
 
 .off-textbox {

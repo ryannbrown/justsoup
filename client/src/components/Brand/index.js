@@ -55,8 +55,8 @@ export default class Brand extends Component {
           display: `flex`,
           alignItems: `center`,
           position: `relative`,
-          height: "398px",
-          width: "254px",
+          width: "150px",
+          height: "245.25px",
           marginTop: "50px"
         }}>
            <a className="work-link" target="_blank" href={item.link}>

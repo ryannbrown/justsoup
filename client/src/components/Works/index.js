@@ -68,11 +68,12 @@ export default class Works extends Component {
 
     return (
       <div className="works-component">
+         <h1>our work</h1>
         <div className="off-box-parent">
-          <h1>our work</h1>
+         
           {logos}
-          <p onClick={this.props.showBrand}>See more</p>
         </div>
+          <p onClick={this.props.showBrand}>See more</p>
       </div>
     );
   }
