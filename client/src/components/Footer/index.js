@@ -23,13 +23,14 @@ export default class Footer extends Component {
   // }
 
   render() {
-    return (
-   <div className="footer-component">
+    return (<div className="child">
+   <div className=" footer-component">
      <img className="dots" src={dots}></img>
         <div className="footer-content">
           <img src={logo}></img>
         </div>
         
+      </div>
       </div>
     );
   }

@@ -75,11 +75,11 @@ export default class Homepage extends Component {
   render() {
     const { showBrand, isMobile } = this.state;
     return (
-      <div className="home-page">
+      <div>
         {showBrand ? (
           <Brand hideBrand={this.hideBrand}></Brand>
         ) : (
-          <div>
+          <div className="home-page">
             <Hero height={this.state.height}></Hero>
             <About></About>
             {isMobile ? (

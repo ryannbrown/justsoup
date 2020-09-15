@@ -27,7 +27,7 @@ export default class Cta extends Component {
   }
 
   render() {
-    return (
+    return (<div className="child">
       <div className="cta-component">
         <div className="cta-content">
           <h1>work with us</h1>
@@ -38,6 +38,7 @@ export default class Cta extends Component {
           <button className="soup-btn">Contact us</button>
           </a>
         </div>
+      </div>
       </div>
     );
   }

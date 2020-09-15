@@ -83,7 +83,7 @@ export default class MobileWorks extends Component {
     ));
 
     return (
-      <div className="w-parent">
+      <div className=" child w-parent">
         <div className="w-container">
           <h1>our work</h1>
           <Slider {...settings}>

@@ -32,7 +32,9 @@ export default class Hero extends Component {
   }
 
   render() {
-    return (
+    return (<div className="child">
+
+
         <div style={{
           height:`${this.props.height}`,
           
@@ -41,6 +43,7 @@ export default class Hero extends Component {
           <img src={logo}></img>
           </div>
          
+        </div>
         </div>
     );
   }
