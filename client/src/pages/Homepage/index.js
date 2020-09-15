@@ -12,7 +12,12 @@ import Brand from "../../components/Brand";
 import Works from "../../components/Works";
 import MobileWorks from "../../components/MobileWorks";
 import Cta from "../../components/Cta";
+import ScrollSnap from "scroll-snap";
 var _ = require("lodash");
+
+function callback() {
+  console.log("snapped");
+}
 
 export default class Homepage extends Component {
   constructor(props) {
@@ -26,15 +31,36 @@ export default class Homepage extends Component {
       showBrand: false,
       isMobile: false,
     };
+    this.container = React.createRef();
   }
 
+  bindScrollSnap = () => {
+    const element = this.container.current;
+    console.log("the element", element);
+    const snapElement = new ScrollSnap(element, {
+      snapDestinationY: "100%",
+      snapDestinationX: "0%",
+      duration: 100,
+    });
+
+    console.log(snapElement)
+    console.log(callback)
+    snapElement.bind(callback);
+  }
+
+  // componentDidUpdate() {
+  //   this.bindScrollSnap();
+  // }
+
   componentDidMount() {
+    this.bindScrollSnap();
+
     let height = window.innerHeight + "px";
     // console.log(height);
 
     this.setState({
-      height: height
-  })
+      height: height,
+    });
 
     if (window.innerWidth < 667) {
       this.setState({
@@ -62,7 +88,7 @@ export default class Homepage extends Component {
             isMobile: false,
           });
         }
-      },400)
+      }, 400)
     );
   }
   showBrand = () => {
@@ -79,16 +105,26 @@ export default class Homepage extends Component {
         {showBrand ? (
           <Brand hideBrand={this.hideBrand}></Brand>
         ) : (
-          <div className="home-page">
-            <Hero height={this.state.height}></Hero>
-            <About></About>
-            {isMobile ? (
-              <MobileWorks showBrand={this.showBrand}></MobileWorks>
-            ) : (
-              <Works showBrand={this.showBrand}></Works>
-            )}
-            <Cta></Cta>
-            <Footer></Footer>
+          <div id="container" ref={this.container}>
+            <div className="page first-page">
+              <Hero height={this.state.height}></Hero>
+            </div>
+            <div className="page second-page">
+              <About></About>
+            </div>
+            <div className="page third-page">
+              {isMobile ? (
+                <MobileWorks showBrand={this.showBrand}></MobileWorks>
+              ) : (
+                <Works showBrand={this.showBrand}></Works>
+              )}
+            </div>
+            <div className="page fourth-page">
+              <Cta></Cta>
+            </div>
+            <div className="page fifth-page">
+              <Footer></Footer>
+            </div>
           </div>
         )}
       </div>

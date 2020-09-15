@@ -32,7 +32,7 @@ export default class Hero extends Component {
   }
 
   render() {
-    return (<div className="child">
+    return (
 
 
         <div style={{
@@ -43,7 +43,6 @@ export default class Hero extends Component {
           <img src={logo}></img>
           </div>
          
-        </div>
         </div>
     );
   }

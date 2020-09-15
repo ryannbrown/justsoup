@@ -30,7 +30,7 @@ export default class About extends Component {
   }
 
   render() {
-    return (<div className="child">
+    return (
         <div className=" about-component">
              <img className="dots" src={dots}></img>
           <div className="about-content">
@@ -42,7 +42,7 @@ export default class About extends Component {
           </div>
          
         </div>
-        </div>
+   
     );
   }
 }
