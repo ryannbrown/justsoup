@@ -51,6 +51,10 @@ export default class MobileWorks extends Component {
     });
   }
 
+  navTo = (link) => { 
+    window.location.href = link
+   }
+
   render() {
 
     const settings = {
@@ -62,7 +66,8 @@ export default class MobileWorks extends Component {
     };
 
     const logos = this.state.logoState.map((item, i) => (
-     <div style={{
+     
+     <div onClick={()=> {this.navTo(item.link)}} style={{
       backgroundSize: `120px`,
       backgroundColor:'white',
       backgroundRepeat: `no-repeat`,
@@ -74,12 +79,12 @@ export default class MobileWorks extends Component {
       marginTop: "50px"
      }}>
       <img className="mobile-works-img" src={item.logo}></img>
-         <a className="work-link" target="_blank" href={item.link}>
+         
          {/* <hr className="off-hr"></hr> */}
         {/* <div className="opacity-filter"></div> */}
         {/* <hr className="off-hr"></hr> */}
-      </a>
       </div>
+    
     ));
 
     return (
