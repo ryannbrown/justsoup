@@ -40,7 +40,8 @@ export default class Homepage extends Component {
     const snapElement = new ScrollSnap(element, {
       snapDestinationY: "100%",
       snapDestinationX: "0%",
-      duration: 100,
+      timeout: 1,
+      duration: 1,
     });
 
     console.log(snapElement)
