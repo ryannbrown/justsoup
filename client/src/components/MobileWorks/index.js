@@ -38,7 +38,7 @@ export default class MobileWorks extends Component {
       { logo: ihLogo,
         link:'https://www.idlehourcoffee.com/' },
       { logo: moonsLogo,
-      link:'' },
+      link:'https://kathrynjudybrown.herokuapp.com/' },
       { logo: bhLogo,
       link:'http://blueheronculinary.com/' },
       { logo: millieLogo,

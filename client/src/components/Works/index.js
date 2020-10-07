@@ -29,7 +29,7 @@ export default class Works extends Component {
   componentDidMount() {
     const logoList = [
       { logo: ihLogo, link: "https://www.idlehourcoffee.com/" },
-      { logo: moonsLogo, link: "" },
+      { logo: moonsLogo, link: "https://kathrynjudybrown.herokuapp.com/" },
       { logo: bhLogo, link: "http://blueheronculinary.com/" },
       { logo: millieLogo, link: "https://www.mgillustrated.com/" }
     ];
