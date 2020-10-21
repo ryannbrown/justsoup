@@ -40,7 +40,7 @@ export default class Hero extends Component {
           
         }} className="home-hero">
           <div>
-          <img src={logo}></img>
+          <img className="animate__animated animate__zoomInDown" src={logo}></img>
           </div>
          
         </div>
