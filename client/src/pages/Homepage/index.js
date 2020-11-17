@@ -7,6 +7,7 @@ import About from "../../components/About";
 // import HomeHero from "../../components/HomeHero/index"
 import "./style.css";
 import Footer from "../../components/Footer/index.js";
+import SideNav from "../../components/SideNav/index.js"
 import Hero from "../../components/Hero";
 import Brand from "../../components/Brand";
 import Works from "../../components/Works";
@@ -59,6 +60,7 @@ export default class Homepage extends Component {
       forms: [],
       showBrand: false,
       isMobile: false,
+      bigScreen:false
     };
     this.container = React.createRef();
   }
@@ -98,6 +100,11 @@ export default class Homepage extends Component {
         isMobile: true,
       });
     }
+    if (window.innerWidth > 1400) {
+      this.setState({
+        bigScreen: true,
+      });
+    }
     window.addEventListener("resize", () => {
       let height = window.innerHeight + "px";
       this.setState({
@@ -130,19 +137,26 @@ export default class Homepage extends Component {
   };
 
   render() {
-    const { showBrand, isMobile } = this.state;
+    const { showBrand, isMobile, bigScreen } = this.state;
     return (
       <div>
+        {bigScreen && <SideNav/>}
+  
         {showBrand ? (
           <Brand hideBrand={this.hideBrand}></Brand>
         ) : (
           <div id="container" ref={this.container}>
+              <a id="1">
             <div className="page first-page">
               <Hero height={this.state.height}></Hero>
             </div>
+            </a>
+            <a id="2">
             <div className="page second-page">
               <About></About>
             </div>
+            </a>
+            <a id="3">
             <div className="page third-page">
               {isMobile ? (
                 <MobileWorks showBrand={this.showBrand}></MobileWorks>
@@ -150,9 +164,12 @@ export default class Homepage extends Component {
                 <Works showBrand={this.showBrand}></Works>
               )}
             </div>
+            </a>
+            <a id="4">
             <div className="page fourth-page">
               <Cta></Cta>
             </div>
+            </a>
             <div className="page fifth-page">
               <Footer></Footer>
             </div>

@@ -1,0 +1,88 @@
+
+@media (min-width:667px) {
+    .side-nav {
+        position: fixed;
+        left: 5px;
+        top: 50%;
+        margin-top: -100px;
+        color: blue;
+        height: 200px;
+        width: 200px;
+        z-index: 1000;
+        display: flex !important;
+        flex-direction: column;
+        padding: 25px;
+    }
+}
+
+.side-nav > * {
+    margin:25px;
+    cursor:pointer;
+}
+
+.side-nav-div a {
+    width:200px;
+}
+
+.side-nav .inactive {
+    background-color: rgb(139 139 139);
+    color: black !important;
+    width: 1px;
+    height: 20px;
+    opacity:.25;
+}
+
+.side-nav .active-a {
+    background-color: black;
+    color: black !important;
+    width: 3px;
+    height: 20px;
+}
+
+.side-nav .active-b {
+    background-color: white;
+    color: black !important;
+    width: 3px;
+    height: 20px;
+}
+.side-nav .active-c {
+    background-color: white;
+    color: black !important;
+    width: 3px;
+    height: 20px;
+}
+.side-nav .active-d {
+    background-color: black;
+    color: black !important;
+    width: 3px;
+    height: 20px;
+}
+
+
+
+/* .side-nav-text-active-a {
+    color:black !important;
+}
+.side-nav-text-active-b {
+    color:purple !important;
+}
+.side-nav-text-active-c {
+    color:red !important;
+}
+.side-nav-text-active-d {
+    color:gold !important;
+} */
+
+.side-nav-text{
+    display: none;
+}
+
+.side-nav-div {
+    display:flex;
+    width:200px;
+    margin:5px;
+}
+
+.side-nav-div p {
+    margin-left:10px;
+}
