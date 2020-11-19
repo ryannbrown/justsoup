@@ -22,20 +22,30 @@ export default class SideNav extends Component {
 
 
     componentDidMount() {
+
+
+      const height = window.innerHeight - 200 ;
+      const height2 = height + height;
+      const height3 = height2 + height;
+      const height4 = height3 + height;
+      // console.log(height, height2, height3, height4)
+      // console.log("hey")
+
+      
         document.addEventListener('scroll', () => {
-            // console.log(window.scrollY)
+            console.log(window.scrollY)
            
         //   const isTop = window.scrollY < 100;
-          if (window.scrollY <= 900 ) {
+          if (window.scrollY <= height ) {
               this.setState({ location: 1 })
           }
-          if (window.scrollY > 900 && window.scrollY < 2000) {
+          if (window.scrollY > height && window.scrollY < height2) {
               this.setState({ location: 2 })
           }
-          if (window.scrollY > 1750 && window.scrollY < 3000 ) {
+          if (window.scrollY > height2 && window.scrollY < height3 ) {
               this.setState({ location: 3 })
           }
-          if (window.scrollY > 2750 ) {
+          if (window.scrollY > height3 ) {
               this.setState({ location: 4 })
           }
         });
