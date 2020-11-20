@@ -17,8 +17,6 @@ export default class SideNav extends Component {
     var height2 = height + height;
     var height3 = height2 + height;
     var height4 = height3 + height;
-    // console.log(height, height2, height3, height4)
-    // console.log("hey")
 
     window.addEventListener(
       "resize",
@@ -27,7 +25,7 @@ export default class SideNav extends Component {
         height2 = height + height;
         height3 = height2 + height;
         height4 = height3 + height;
-        console.log("resizing", height, height2, height3, height4);
+        // console.log("resizing", height, height2, height3, height4);
       }, 400)
     );
 
