@@ -80,6 +80,13 @@
 }
 
 
+.side-nav-text-inverted {
+    color:white !important;
+    opacity:0;
+}
+.side-nav-text-inverted:hover {
+    opacity:1;
+}
 
 .side-nav-text{
     opacity: 0;
