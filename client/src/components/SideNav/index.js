@@ -30,7 +30,7 @@ export default class SideNav extends Component {
     );
 
     document.addEventListener("scroll", () => {
-      console.log(window.scrollY);
+      // console.log(window.scrollY);
 
       //   const isTop = window.scrollY < 100;
       if (window.scrollY <= height) {
