@@ -48,6 +48,11 @@ export default class SideNav extends Component {
     });
   }
 
+      //  <div className="side-nav-div">
+      //       <a href="/#4"><FontAwesomeIcon style={{color:'#d2d2d2'}} className={this.state.location === 4 ? 'active-d' : 'inactive'} icon={faCircle}></FontAwesomeIcon></a>
+      //       <p className={this.state.location === 4 ? ' animate__animated side-nav-text-active-d animate__bounceInLeft' : 'side-nav-text'}>Reach Out</p>
+      //       </div>
+
   render() {
     return (
       <div
@@ -58,14 +63,14 @@ export default class SideNav extends Component {
           <a href="/#1">
             <div
               className={this.state.location === 1 ? "active-a" : "inactive"}
-            ></div>
+            ><p className={this.state.location === 1 ? ' animate__animated side-nav-text-active-a animate__fadeOut' : 'side-nav-text'}>Welcome</p></div>
           </a>
         </div>
         <div className="side-nav-div">
           <a href="/#2">
             <div
               className={this.state.location === 2 ? "active-b" : "inactive"}
-            ></div>
+            ><p className={this.state.location === 2 ? ' animate__animated side-nav-text-active-b animate__fadeOut' : 'side-nav-text'}>Who We Are</p></div>
           </a>
         </div>
         <div className="side-nav-div">
@@ -73,14 +78,14 @@ export default class SideNav extends Component {
             {" "}
             <div
               className={this.state.location === 3 ? "active-c" : "inactive"}
-            ></div>
+            ><p className={this.state.location === 3 ? ' animate__animated side-nav-text-active-c animate__fadeOut' : 'side-nav-text'}>Our Work</p></div>
           </a>
         </div>
         <div className="side-nav-div">
           <a href="/#4">
             <div
               className={this.state.location === 4 ? "active-d" : "inactive"}
-            ></div>
+            ><p className={this.state.location === 4 ? ' animate__animated side-nav-text-active-d animate__fadeOut' : 'side-nav-text'}>Reach Out</p></div>
           </a>
         </div>
       </div>

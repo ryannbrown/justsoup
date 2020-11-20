@@ -58,8 +58,38 @@
     height: 20px;
 }
 
+.side-nav-text-active-a {
+    color:black;
+    animation-delay:1.5s;
+    animation-duration: 1s;
+}
+.side-nav-text-active-b {
+    color:white;
+    animation-delay:1.5s;
+    animation-duration: 1s;
+}
+.side-nav-text-active-c {
+    color:white;
+    animation-delay:1.5s;
+    animation-duration: 1s;
+}
+.side-nav-text-active-d {
+    color:black;
+    animation-delay:1.5s;
+    animation-duration: 1s;
+}
+
+
+
 .side-nav-text{
-    display: none;
+    opacity: 0;
+}
+.side-nav-text:hover{
+    opacity:1 !important;
+}
+
+.inactive:hover {
+    opacity:1;
 }
 
 .side-nav-div {
@@ -70,4 +100,5 @@
 
 .side-nav-div p {
     margin-left:10px;
+    width:100px;
 }
