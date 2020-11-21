@@ -55,122 +55,141 @@ export default class SideNav extends Component {
 
   render() {
     return (
-      <div
-        className="side-nav"
-        style={{ display: "none", backgroundColor: "transparent" }}
-      >
-        <div className="side-nav-div">
-          <a href="/#1">
-            <div
-              className={this.state.location === 1 ? "active-a" : "inactive"}
-            >
-              {this.state.location === 3 ? 
-                <p
-                  className={
-                    this.state.location === 1
-                      ? " animate__animated side-nav-text-active-a animate__fadeOut"
-                      : "side-nav-text-inverted"
-                  }
-                >
-                  Welcome
-                </p>
-               : 
-                <p
-                  className={
-                    this.state.location === 1
-                      ? " animate__animated side-nav-text-active-a animate__fadeOut"
-                      : "side-nav-text"
-                  }
-                >
-                  Welcome
-                </p>
+      <div>
+        {/* <div className="pricing-btn-container">
+          <a href={`/pricing`}>
+            <button
+              className={
+                this.state.location === 2 || this.state.location === 3
+                  ? "pricing-btn-inverted"
+                  : "pricing-btn"
               }
-            </div>
-          </a>
-        </div>
-        <div className="side-nav-div">
-          <a href="/#2">
-            <div
-              className={this.state.location === 2 ? "active-b" : "inactive"}
             >
-              {this.state.location === 3 ? 
-                <p
-                  className={
-                    this.state.location === 2
-                      ? " animate__animated side-nav-text-active-b animate__fadeOut"
-                      : "side-nav-text-inverted"
-                  }
-                >
-                  Who We Are
-                </p>
-               : 
-                <p
-                  className={
-                    this.state.location === 2
-                      ? " animate__animated side-nav-text-active-b animate__fadeOut"
-                      : "side-nav-text"
-                  }
-                >
-                  Who We Are
-                </p>
-              }
-            </div>
+              Pricing
+            </button>
           </a>
-        </div>
-        <div className="side-nav-div">
-          <a href="/#3">
-            {" "}
-            <div
-              className={this.state.location === 3 ? "active-c" : "inactive"}
-            >
-              {this.state.location === 3 ?
-              <p
-                className={
-                  this.state.location === 3
-                    ? " animate__animated side-nav-text-active-c animate__fadeOut"
-                    : "side-nav-text-inverted"
-                }
+        </div> */}
+        <div
+          className="side-nav"
+          style={{ display: "none", backgroundColor: "transparent" }}
+        >
+          <div className="side-nav-div">
+            <a href="/#1">
+              <div
+                className={this.state.location === 1 ? "active-a" : "inactive"}
               >
-                Our Work
-              </p> : <p
-                className={
-                  this.state.location === 3
-                    ? " animate__animated side-nav-text-active-c animate__fadeOut"
-                    : "side-nav-text"
-                }
+                {this.state.location === 3 ? (
+                  <p
+                    className={
+                      this.state.location === 1
+                        ? " animate__animated side-nav-text-active-a animate__fadeOut"
+                        : "side-nav-text-inverted"
+                    }
+                  >
+                    Welcome
+                  </p>
+                ) : (
+                  <p
+                    className={
+                      this.state.location === 1
+                        ? " animate__animated side-nav-text-active-a animate__fadeOut"
+                        : "side-nav-text"
+                    }
+                  >
+                    Welcome
+                  </p>
+                )}
+              </div>
+            </a>
+          </div>
+          <div className="side-nav-div">
+            <a href="/#2">
+              <div
+                className={this.state.location === 2 ? "active-b" : "inactive"}
               >
-                Our Work
-              </p>
-  }
-            </div>
-          </a>
-        </div>
-        <div className="side-nav-div">
-          <a href="/#4">
-            <div
-              className={this.state.location === 4 ? "active-d" : "inactive"}
-            >
-               {this.state.location === 3 ?
-              <p
-                className={
-                  this.state.location === 4
-                    ? " animate__animated side-nav-text-active-d animate__fadeOut"
-                    : "side-nav-text-inverted"
-                }
+                {this.state.location === 3 ? (
+                  <p
+                    className={
+                      this.state.location === 2
+                        ? " animate__animated side-nav-text-active-b animate__fadeOut"
+                        : "side-nav-text-inverted"
+                    }
+                  >
+                    Who We Are
+                  </p>
+                ) : (
+                  <p
+                    className={
+                      this.state.location === 2
+                        ? " animate__animated side-nav-text-active-b animate__fadeOut"
+                        : "side-nav-text"
+                    }
+                  >
+                    Who We Are
+                  </p>
+                )}
+              </div>
+            </a>
+          </div>
+          <div className="side-nav-div">
+            <a href="/#3">
+              {" "}
+              <div
+                className={this.state.location === 3 ? "active-c" : "inactive"}
               >
-                Reach Out
-              </p> : <p
-                className={
-                  this.state.location === 4
-                    ? " animate__animated side-nav-text-active-d animate__fadeOut"
-                    : "side-nav-text"
-                }
+                {this.state.location === 3 ? (
+                  <p
+                    className={
+                      this.state.location === 3
+                        ? " animate__animated side-nav-text-active-c animate__fadeOut"
+                        : "side-nav-text-inverted"
+                    }
+                  >
+                    Our Work
+                  </p>
+                ) : (
+                  <p
+                    className={
+                      this.state.location === 3
+                        ? " animate__animated side-nav-text-active-c animate__fadeOut"
+                        : "side-nav-text"
+                    }
+                  >
+                    Our Work
+                  </p>
+                )}
+              </div>
+            </a>
+          </div>
+          <div className="side-nav-div">
+            <a href="/#4">
+              <div
+                className={this.state.location === 4 ? "active-d" : "inactive"}
               >
-                Reach Out
-              </p>
-  }
-            </div>
-          </a>
+                {this.state.location === 3 ? (
+                  <p
+                    className={
+                      this.state.location === 4
+                        ? " animate__animated side-nav-text-active-d animate__fadeOut"
+                        : "side-nav-text-inverted"
+                    }
+                  >
+                    Services
+                  </p>
+                ) : (
+                  <p
+                    className={
+                      this.state.location === 4
+                        ? " animate__animated side-nav-text-active-d animate__fadeOut"
+                        : "side-nav-text"
+                    }
+                  >
+                    Services
+                  </p>
+                )}
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     );

@@ -15,13 +15,8 @@ import Homepage from "./pages/Homepage/index"
 import WorksDetails from "./pages/WorksDetails/index"
 import Admin from "./pages/Admin/index.js"
 import About from "./pages/About/index.js"
-// import BlogPost from "./pages/BlogPost/index.js"
+import Pricing from "./pages/Pricing/index.js"
 
-// import Portfolio from "./components/Portfolio/index"
-// import Pricing from "./components/Pricing/index"
-// import About from "./components/About/index"
-// import Contact from "./components/Contact/index"
-import createHistory from 'history/createBrowserHistory';
 
 class App extends Component {
   constructor(props) {
@@ -45,7 +40,7 @@ class App extends Component {
   }
   
 componentDidMount() {
-this.fetchPosts();
+// this.fetchPosts();
 
 
   // const history = createHistory({
@@ -65,10 +60,11 @@ this.fetchPosts();
       //  history={history}
        >
         <Switch>
+        <Route  path="/pricing" render={(props) => <Pricing {...props} btnLink="" btnText="Home" />} />
           <Route path="/admin" component={Admin}/>
           <Route path="/about" component={About}/>
           <Route path="/works/:id" render={(props) => <WorksDetails {...props} worksObject={worksObject} title={`Props through render`} />} />
-          <Route exact path="/" render={(props) => <Homepage {...props} worksObject={worksObject} title={`Props through render`} />} />
+          <Route exact path="/" render={(props) => <Homepage {...props} worksObject={worksObject} btnLink="pricing" btnText="Pricing" />} />
         </Switch>
       </Router>
       

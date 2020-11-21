@@ -112,6 +112,7 @@ export default class Homepage extends Component {
     const { showBrand, isMobile, bigScreen } = this.state;
     return (
       <div>
+        
         {bigScreen && <SideNav/>}
   
         {showBrand ? (

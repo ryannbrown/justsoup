@@ -148,7 +148,7 @@ class Panel extends Component {
 
 
   componentDidMount() {
-    this.fetchPosts();
+    // this.fetchPosts();
     // this.fetchLeads();
   }
 
