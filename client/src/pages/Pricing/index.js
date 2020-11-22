@@ -57,7 +57,7 @@ export default class Pricing extends Component {
                   borderBottom: "1px solid #171717",
                   borderTop: "1px solid #171717",
                   opacity: ".3",
-                  margin: "20px auto",
+                  margin: "20px 50px",
                 }}
               ></hr>
             </p>
@@ -68,7 +68,7 @@ export default class Pricing extends Component {
                   borderBottom: "1px solid #171717",
                   borderTop: "1px solid #171717",
                   opacity: ".3",
-                  margin: "20px auto",
+                  margin: "20px 50px",
                 }}
               ></hr>
             </p>
