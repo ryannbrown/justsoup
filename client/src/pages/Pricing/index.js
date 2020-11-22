@@ -21,7 +21,7 @@ export default class Pricing extends Component {
   }
 
   scrollDown = () => {
-    window.scrollTo(0, 4000);
+    window.scrollTo(0, 1500);
   };
   componentDidMount() {}
 
