@@ -243,6 +243,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
      width:300px;
      font-size:12px;
      opacity:.5;
+     text-align:left;
  }
 
 
@@ -307,6 +308,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         opacity: .5;
         left: 50%;
         margin-left: -150px;
+        text-align:center;
     }
     .actual-form button{
         position:relative !important;
