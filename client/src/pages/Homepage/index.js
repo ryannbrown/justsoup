@@ -72,11 +72,11 @@ export default class Homepage extends Component {
         isMobile: true,
       });
     }
-    if (window.innerWidth > 1400) {
-      this.setState({
-        bigScreen: true,
-      });
-    }
+    // if (window.innerWidth > 900) {
+    //   this.setState({
+    //     bigScreen: true,
+    //   });
+    // }
     window.addEventListener("resize", () => {
       let height = window.innerHeight + "px";
       this.setState({
@@ -113,7 +113,7 @@ export default class Homepage extends Component {
     return (
       <div>
         
-        {bigScreen && <SideNav/>}
+       <SideNav></SideNav>
   
         {showBrand ? (
           <Brand hideBrand={this.hideBrand}></Brand>
