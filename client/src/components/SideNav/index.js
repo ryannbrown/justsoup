@@ -13,7 +13,15 @@ export default class SideNav extends Component {
   }
 
   componentDidMount() {
+
     var height = window.innerHeight - 200;
+
+    // if (window.innerHeight > 900) {
+    //   var height = window.innerHeight - 250;
+    // } else {
+    //   var height = window.innerHeight - 100;
+    // }
+    // console.log(window.innerHeight, height);
     var height2 = height + height;
     var height3 = height2 + height;
     var height4 = height3 + height;
@@ -22,6 +30,12 @@ export default class SideNav extends Component {
       "resize",
       _.debounce(() => {
         height = window.innerHeight;
+
+        // if (window.innerHeight > 900) {
+        //   var height = window.innerHeight - 200;
+        // } else {
+        //   var height = window.innerHeight;
+        // }
         height2 = height + height;
         height3 = height2 + height;
         height4 = height3 + height;
