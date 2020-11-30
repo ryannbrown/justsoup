@@ -5,7 +5,10 @@ import React, { Component } from "react";
 // import HomeHero from "../../components/HomeHero/index"
 import "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import {
+  faChevronDown,
+  faChevronLeft,
+} from "@fortawesome/free-solid-svg-icons";
 require("dotenv").config();
 
 export default class Pricing extends Component {
@@ -26,16 +29,18 @@ export default class Pricing extends Component {
   componentDidMount() {}
 
   render() {
-
-
-    const formLink = 'https://getform.io/f/ea77b207-e8f0-4607-8261-febb2f7de409'
+    const formLink =
+      "https://getform.io/f/ea77b207-e8f0-4607-8261-febb2f7de409";
     // const logos = this.state.logoState.map((item, i) => (
 
     return (
       <div className="pricing-container">
-        <div className="pricing-btn-container">
-          <a href={`/${this.props.btnLink}`}>
+        <div className="left-btn-container">
+          {/* <a href={`/${this.props.btnLink}`}>
             <button className="pricing-btn">{this.props.btnText}</button>
+          </a> */}
+          <a href="/">
+            <FontAwesomeIcon className="left-arrow" icon={faChevronLeft} />
           </a>
         </div>
         <h1>Pricing Plans</h1>
@@ -54,10 +59,9 @@ export default class Pricing extends Component {
               <hr
                 style={{
                   width: "33px",
-                  borderBottom: "1px solid #171717",
-                  borderTop: "1px solid #171717",
+                  borderBottom: ".5px solid #171717",
                   opacity: ".3",
-                  margin: "20px 50px",
+                  margin: "20px 0px",
                 }}
               ></hr>
             </p>
@@ -65,10 +69,9 @@ export default class Pricing extends Component {
               <hr
                 style={{
                   width: "33px",
-                  borderBottom: "1px solid #171717",
-                  borderTop: "1px solid #171717",
+                  borderBottom: ".5px solid #171717",
                   opacity: ".3",
-                  margin: "20px 50px",
+                  margin: "20px 0px",
                 }}
               ></hr>
             </p>
@@ -111,10 +114,7 @@ export default class Pricing extends Component {
         <div className="form-container">
           <h1>Your new site awaits</h1>
           <div className="actual-form">
-            <form
-              action={formLink}
-              method="POST"
-            >
+            <form action={formLink} method="POST">
               <div className="form-col-1">
                 <div className="form-fam">
                   <p>Business Name</p>
