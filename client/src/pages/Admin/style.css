@@ -1,5 +1,17 @@
 
+.submission-wrapper{
+    display:flex;
+    min-height:100vh;
+    align-items:center;
+    max-width:980px;
+    justify-content: center;
+    margin:0px auto;
+    flex-wrap:wrap;
+}
 
+.submission{
+    flex: 1 0 27%;
+}
 
 .delete-icon {
     position: absolute;
