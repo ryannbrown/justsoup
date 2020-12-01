@@ -161,7 +161,7 @@ export default class Pricing extends Component {
                     required
                     type="text"
                     name="phone"
-                    placeholder="i.e Sally Smith"
+                    placeholder="123-456-7890"
                   />
                 </div>
                 <div className="form-fam">
