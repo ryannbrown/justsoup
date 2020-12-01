@@ -134,7 +134,7 @@ export default class Pricing extends Component {
                 </div>
                 <div className="form-fam">
                   <p>
-                    Basic Description of what you want your website to be able
+                    Basic description of what you want your website to be able
                     to do*
                   </p>
                   <textarea
@@ -146,6 +146,15 @@ export default class Pricing extends Component {
                 </div>
               </div>
               <div className="form-col-2">
+                <div className="form-fam">
+                  <p>Contact email*</p>
+                  <input
+                    required
+                    type="email"
+                    name="email"
+                    placeholder="i.e sally.smith@gmail.com"
+                  />
+                </div>
                 <div className="form-fam">
                   <p>Contact number*</p>
                   <input
