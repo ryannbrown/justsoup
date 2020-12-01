@@ -52,8 +52,8 @@ export default class Pricing extends Component {
             <p>
               <strong>Starting at $999-$3k</strong>
             </p>
-            <p>Basic Branding</p>
-            <p>Blogs, Portfolios, Storefronts</p>
+            <p>Basic branding</p>
+            <p>Blogs, portfolios, storefronts</p>
             <p>Basic form handling</p>
             <p>
               <hr
@@ -83,24 +83,24 @@ export default class Pricing extends Component {
             <p>
               <strong>Starting at $3.5k-$7k</strong>
             </p>
-            <p>Advanced Branding</p>
+            <p>Advanced branding</p>
             <p>Optional Gatsby integration</p>
             <p>Advanced form handling</p>
-            <p>Basic API Integrations</p>
-            <p>Basic Ecommerce Solutions </p>
+            <p>Basic API integrations</p>
+            <p>Basic ecommerce solutions </p>
           </div>
           <div className="bowl">
             <h1>
               <span>Bigger</span> Bowl
             </h1>
             <p>
-              <strong>Starting at $8k-$10k</strong>
+              <strong>Starting at $8k</strong>
             </p>
-            <p>Advanced Branding</p>
+            <p>Advanced branding</p>
             <p>Optional Gatsby integration</p>
-            <p>Advanced Form Handling</p>
-            <p>Advanced API Integrations</p>
-            <p>Full Ecommerce Solutions</p>
+            <p>Advanced form handling</p>
+            <p>Advanced API integrations</p>
+            <p>Full ecommerce solutions</p>
           </div>
           {/* <hr></hr> */}
         </div>
