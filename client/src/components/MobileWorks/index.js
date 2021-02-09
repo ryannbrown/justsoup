@@ -16,6 +16,7 @@ import bhLogo from "../../media/bhlogo.png";
 import ihLogo from "../../media/ihlogo.png";
 import moonsLogo from "../../media/moonslogo.png";
 import millieLogo from "../../media/millielogo.png";
+import unbreakableLogo from "../../media/unbreakable.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -37,6 +38,7 @@ export default class MobileWorks extends Component {
     const logoList = [
       { logo: ihLogo,
         link:'https://www.idlehourcoffee.com/' },
+        { logo: unbreakableLogo, link: "https://unbreakable.herokuapp.com" },
       { logo: moonsLogo,
       link:'https://kathrynjudybrown.herokuapp.com/' },
       { logo: bhLogo,

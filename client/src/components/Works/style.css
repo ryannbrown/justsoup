@@ -77,6 +77,16 @@ left:30%;
   margin: 0px 10px;
   justify-content: center;
   cursor: pointer;
+  /* flex: 0 0 25%; */
+}
+.brand-container .off {
+  position: relative;
+  height: 200px;
+  align-items: center;
+  margin: 0px 10px;
+  justify-content: center;
+  cursor: pointer;
+  flex: 0 0 25%;
 }
 
 .work-link {

@@ -16,6 +16,7 @@ import bhLogo from "../../media/bhlogo.png";
 import ihLogo from "../../media/ihlogo.png";
 import moonsLogo from "../../media/moonslogo.png";
 import millieLogo from "../../media/millielogo.png";
+import unbreakableLogo from "../../media/unbreakable.png"
 
 export default class Works extends Component {
   constructor(props) {
@@ -29,7 +30,8 @@ export default class Works extends Component {
   componentDidMount() {
     const logoList = [
       { logo: ihLogo, link: "https://www.idlehourcoffee.com/" },
-      { logo: moonsLogo, link: "https://kathrynjudybrown.herokuapp.com/" },
+      { logo: unbreakableLogo, link: "https://unbreakable.herokuapp.com" },
+      { logo: moonsLogo, link: "https://thehavenwithin.com" },
       { logo: bhLogo, link: "http://blueheronculinary.com/" },
       { logo: millieLogo, link: "https://www.mgillustrated.com/" }
     ];
@@ -40,7 +42,7 @@ export default class Works extends Component {
   }
 
   render() {
-    const logos = this.state.logoState.map((item, i) => (
+    const logos = this.state.logoState.slice(0, 4).map((item, i) => (
       <div
         className="off"
         style={{

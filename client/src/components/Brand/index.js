@@ -9,6 +9,7 @@ import bhLogo from "../../media/bhlogo.png";
 import ihLogo from "../../media/ihlogo.png";
 import moonsLogo from "../../media/moonslogo.png";
 import millieLogo from "../../media/millielogo.png";
+import unbreakableLogo from "../../media/unbreakable.png"
 
 
 export default class Brand extends Component {
@@ -27,6 +28,8 @@ export default class Brand extends Component {
     const logoList = [
       { logo: ihLogo,
         link:'https://www.idlehourcoffee.com/' },
+        { logo: unbreakableLogo, link: "https://unbreakable.herokuapp.com" },
+        
       { logo: moonsLogo,
       link:'' },
       { logo: bhLogo,
